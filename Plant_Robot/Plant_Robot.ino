@@ -192,7 +192,7 @@ void loop(){
   }
 
   if (deviceConnected) {
-    pSensorHumidityCharacteristic->setValue(String(lightL).c_str());
+    pSensorHumidityCharacteristic->setValue(String(humidity).c_str());
     pSensorHumidityCharacteristic->notify();
     delay(3000); 
   }
